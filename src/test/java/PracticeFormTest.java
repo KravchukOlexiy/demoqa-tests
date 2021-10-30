@@ -44,8 +44,7 @@ public class PracticeFormTest {
 
         //check that all data was sent
         $("#example-modal-sizes-title-lg").shouldHave(Condition.text("Thanks for submitting the form"));
-        ElementsCollection tdElements = $$("td");
-        tdElements.shouldHave(CollectionCondition.texts(
+        $$("td").shouldHave(CollectionCondition.texts(
                 "Student Name", "My firtsname My lastname",
                 "Student Email", "someemail@some.net",
                 "Gender", "Male",

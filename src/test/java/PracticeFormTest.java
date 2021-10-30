@@ -6,8 +6,10 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-public class PracticeFormTest {
 
+
+
+public class PracticeFormTest {
 
     @Test
     void formTest () {

@@ -31,7 +31,7 @@ public class PracticeFormTest {
 
         $(byText("Sports")).click();
 
-        $("#uploadPicture").uploadFile(new File("src/test/resources/1.png"));
+        $("#uploadPicture").uploadFromClasspath("1.png");
         $("#currentAddress").setValue("My text");
 
         $("#state").$("svg").click();

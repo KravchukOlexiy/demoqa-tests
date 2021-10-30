@@ -28,6 +28,7 @@ public class PracticeFormTest {
         $(byText("Physics")).click();
 
         $(byText("Sports")).click();
+
         $("#uploadPicture").uploadFile(new File("src/test/resources/1.png"));
         $("#currentAddress").setValue("My text");
 
@@ -37,25 +38,22 @@ public class PracticeFormTest {
         $("#city").click();
         $(byText("Delhi")).click();
 
-
         $("#submit").scrollTo().click();
 
-
-        //check all sent data
+        //check that all data was sent
         $("#example-modal-sizes-title-lg").shouldHave(Condition.text("Thanks for submitting the form"));
         ElementsCollection tdElements = $$("td");
-        tdElements.shouldHave(CollectionCondition.texts("Student Name", "My firtsname My lastname", "Student Email", "someemail@some.net", "Gender", "Male", "Mobile", "0123456789", "Date of Birth", "26 August,1988", "Subjects", "Physics", "Hobbies", "Sports", "Picture", "1.png", "Address", "My text", "State and City", "NCR Delhi"));
-
-
-
-
-
-
-
-
-
-
+        tdElements.shouldHave(CollectionCondition.texts(
+                "Student Name", "My firtsname My lastname",
+                "Student Email", "someemail@some.net",
+                "Gender", "Male",
+                "Mobile", "0123456789",
+                "Date of Birth", "26 August,1988",
+                "Subjects", "Physics",
+                "Hobbies", "Sports",
+                "Picture", "1.png",
+                "Address", "My text",
+                "State and City", "NCR Delhi"));
 
     }
-
 }

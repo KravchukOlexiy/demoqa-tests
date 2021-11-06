@@ -1,9 +1,10 @@
+package home_work_2;
+
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.ElementsCollection;
 import org.junit.jupiter.api.Test;
-import java.io.File;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -40,7 +41,7 @@ public class PracticeFormTest {
         $("#city").click();
         $(byText("Delhi")).click();
 
-        $("#submit").scrollTo().click();
+        $("#submit").click();
 
         //check that all data was sent
         $("#example-modal-sizes-title-lg").shouldHave(Condition.text("Thanks for submitting the form"));

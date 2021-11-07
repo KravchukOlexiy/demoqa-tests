@@ -1,10 +1,7 @@
 package home_work_4;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
-
 import java.time.Duration;
-
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;

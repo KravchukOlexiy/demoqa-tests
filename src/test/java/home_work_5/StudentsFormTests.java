@@ -28,7 +28,7 @@ public class StudentsFormTests {
                 .clickSubmitButton()
 
                 //check that all data was sent
-                .checkHeader("Thanks for submitting the form")
+                .checkHeader()
                 .checkResultsValue("Student Name", firstName + " " + lastName)
                 .checkResultsValue("Student Email", email)
                 .checkResultsValue("Gender", "Male")

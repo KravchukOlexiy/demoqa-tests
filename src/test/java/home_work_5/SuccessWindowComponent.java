@@ -6,12 +6,14 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SuccessWindowComponent {
+    final String HEADER_TEXT = "Thanks for submitting the form";
+
     SelenideElement
             header = $("#example-modal-sizes-title-lg"),
             table = $(".table-responsive");
 
-    SuccessWindowComponent checkHeader(String headerText) {
-        header.shouldHave(text(headerText));
+    SuccessWindowComponent checkHeader() {
+        header.shouldHave(text(HEADER_TEXT));
         return this;
     }
 

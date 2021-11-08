@@ -32,18 +32,18 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage setFirstName(String a) {
-        firstNameTextField.setValue(a);
+    StudentsFormPage typeFirstName(String firstName) {
+        firstNameTextField.setValue(firstName);
         return this;
     }
 
-    StudentsFormPage setLastName(String a) {
-        lastNameTextField.setValue(a);
+    StudentsFormPage typeLastName(String lastName) {
+        lastNameTextField.setValue(lastName);
         return this;
     }
 
-    StudentsFormPage setEmail(String a) {
-        emailTextField.setValue(a);
+    StudentsFormPage typeEmail(String email) {
+        emailTextField.setValue(email);
         return this;
     }
 
@@ -52,8 +52,8 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage setPhoneNumber(String a) {
-        mobileTextField.setValue(a);
+    StudentsFormPage typePhoneNumber(String phoneNumber) {
+        mobileTextField.setValue(phoneNumber);
         return this;
     }
 
@@ -77,7 +77,7 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage setDateOfBirth(int day, int monthNumber, int year) {
+    StudentsFormPage typeDateOfBirth(int day, int monthNumber, int year) {
         clickDateOfBirth();
         selectMonthNumber(monthNumber - 1);
         selectYear(String.valueOf(year));
@@ -85,7 +85,7 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage setPhysicsSubject() {
+    StudentsFormPage typePhysicsSubject() {
         subjectField.setValue("p");
         $(byText("Physics")).click();
         return this;
@@ -101,8 +101,8 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage setCurrentAddress(String a) {
-        currentAddressTextField.setValue(a);
+    StudentsFormPage typeCurrentAddress (String currentAddress) {
+        currentAddressTextField.setValue(currentAddress);
         return this;
     }
 

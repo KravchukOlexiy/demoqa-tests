@@ -117,8 +117,8 @@ public class StudentsFormPage {
         return this;
     }
 
-    SuccessFormModalWindowComponent clickSubmitButton (){
+    SuccessWindowComponent clickSubmitButton (){
         submitButton.click();
-     return new SuccessFormModalWindowComponent();
+     return new SuccessWindowComponent();
     }
 }

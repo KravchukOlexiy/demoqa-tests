@@ -2,6 +2,7 @@ package home_work_5;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
+
 import static home_work_5.TestData.*;
 
 public class StudentsFormTests {
@@ -26,7 +27,7 @@ public class StudentsFormTests {
                 .selectDelhiCity()
                 .clickSubmitButton()
 
-        //check that all data was sent
+                //check that all data was sent
                 .checkHeader("Thanks for submitting the form")
                 .checkResultsValue("Student Name", firstName + " " + lastName)
                 .checkResultsValue("Student Email", email)

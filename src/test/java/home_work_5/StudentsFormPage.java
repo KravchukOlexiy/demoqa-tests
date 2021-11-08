@@ -72,36 +72,37 @@ public class StudentsFormPage {
         return this;
     }
 
-    StudentsFormPage selectDay (String day) {
+    StudentsFormPage selectDay(String day) {
         $(byText(day)).click();
         return this;
     }
 
-    StudentsFormPage setDateOfBirth (int day, int monthNumber, int year) {
+    StudentsFormPage setDateOfBirth(int day, int monthNumber, int year) {
         clickDateOfBirth();
-        selectMonthNumber (monthNumber-1);
-        selectYear (String.valueOf(year));
-        selectDay (String.valueOf(day));
+        selectMonthNumber(monthNumber - 1);
+        selectYear(String.valueOf(year));
+        selectDay(String.valueOf(day));
         return this;
     }
 
-    StudentsFormPage setPhysicsSubject () {
+    StudentsFormPage setPhysicsSubject() {
         subjectField.setValue("p");
         $(byText("Physics")).click();
         return this;
     }
 
-    StudentsFormPage selectSportHobbies () {
+    StudentsFormPage selectSportHobbies() {
         sportsCheckbox.click();
         return this;
     }
-    StudentsFormPage uploadPicture () {
+
+    StudentsFormPage uploadPicture() {
         selectPictureButton.uploadFromClasspath("1.png");
         return this;
     }
 
     StudentsFormPage setCurrentAddress(String a) {
-    currentAddressTextField.setValue(a);
+        currentAddressTextField.setValue(a);
         return this;
     }
 
@@ -117,8 +118,8 @@ public class StudentsFormPage {
         return this;
     }
 
-    SuccessWindowComponent clickSubmitButton (){
+    SuccessWindowComponent clickSubmitButton() {
         submitButton.click();
-     return new SuccessWindowComponent();
+        return new SuccessWindowComponent();
     }
 }

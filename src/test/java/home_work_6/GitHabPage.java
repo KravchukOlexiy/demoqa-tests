@@ -25,7 +25,4 @@ public class GitHabPage {
     void checkIssueByText(String issueName) {
         $(byText(issueName)).shouldBe(visible);
     }
-
-
-
 }

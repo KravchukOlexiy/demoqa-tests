@@ -1,4 +1,4 @@
-package home_work_6;
+package home_work_6_allure;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static home_work_6.GitHabPage.ISSUE_NAME;
+import static home_work_6_allure.GitHabPage.ISSUE_NAME;
 import static io.qameta.allure.Allure.step;
 
 public class TestWithLyamdaSteps {

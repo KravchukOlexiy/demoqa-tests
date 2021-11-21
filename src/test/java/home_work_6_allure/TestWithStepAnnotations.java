@@ -1,8 +1,8 @@
-package home_work_6;
+package home_work_6_allure;
 
 import org.junit.jupiter.api.Test;
 
-import static home_work_6.GitHabPage.ISSUE_NAME;
+import static home_work_6_allure.GitHabPage.ISSUE_NAME;
 
 public class TestWithStepAnnotations {
 

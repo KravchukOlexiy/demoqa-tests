@@ -35,9 +35,18 @@ allure {
 dependencies {
     testImplementation (
             "com.codeborne:selenide:5.25.0",
-            "org.junit.jupiter:junit-jupiter-api:5.8.1",
+            "org.junit.jupiter:junit-jupiter:5.8.1",
             "com.github.javafaker:javafaker:1.0.2",
-            'io.qameta.allure:allure-selenide:2.14.0'
+            'io.qameta.allure:allure-selenide:2.14.0',
+
+            //library for read text file
+            'commons-io:commons-io:2.11.0',
+            //library for read PDF file
+            'com.codeborne:pdf-test:1.7.0',
+            //library for read xls file
+            'com.codeborne:xls-test:1.2',
+            //library for read csv file
+            'com.opencsv:opencsv:5.5.2'
     )
 
     testRuntimeOnly (

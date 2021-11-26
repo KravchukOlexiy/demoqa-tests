@@ -67,7 +67,6 @@ public class SearchGithub {
         $(".flex-items-start").$("div").$("p").shouldHave(Condition.text(searchRequest.toString()));
     }
 
-
     static Stream<Arguments> searchGithubWithMethodSourceAnnotation() {
         return Stream.of(
                 Arguments.of("Java", "Java is an object-oriented programming language"),

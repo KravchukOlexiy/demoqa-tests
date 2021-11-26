@@ -1,0 +1,24 @@
+TC №1
+Severity: blocker
+Type: smoke
+
+Summary: Проверка наличия страницы Java в результатах поиска github
+Steps:
+1. Открыть сайт https://github.com/
+2. Ввести Java в поле поиска
+3. Нажать клавишу Enter
+
+ER: В результатах есть страница Java
+
+----------------------------------------
+TC №2
+Severity: blocker
+Type: smoke
+
+Summary: Проверка наличия страницы JavaScript в результатах поиска github
+Steps:
+1. Открыть сайт https://github.com/
+2. Ввести JavaScript в поле поиска
+3. Нажать клавишу Enter
+
+ER: В результатах есть страница JavaScript

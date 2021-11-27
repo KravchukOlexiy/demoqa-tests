@@ -1,4 +1,4 @@
-package home_work_2;
+package home_work_10_jenkins;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 
-public class PracticeFormTest {
+public class PracticeWithJenkins {
 
     @Test
     void formTest () {
